@@ -1,0 +1,48 @@
+<!doctype>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name='author' content='coder-xsy'>
+    <meta name='key' content='audio_player'>
+    <title>audio</title>
+    <script src='./js/jquery.js'></script>
+    <link type="text/css" rel="stylesheet" href="./css/audio.css">
+</head>
+<body>
+    <div class="audio_content">
+        <audio  id="audio" src="./static/audio/audio1.mp3" preload="none"></audio>
+        <div class='audio_head'>
+            <img class="audio_img" src="./static/img/img3.jpg" alt="audio_cover">
+            <div class="audio_text">
+                <h3>fadeout</h3>
+                <p>tht song ingup</p>
+                <div>
+                    <img id="volume" src="./static/img/volume.png" alt="volume">
+                    <div class="volume_content">
+                        <span class="volume_bar"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="play_control">
+            <img class="play_btn" src="./static/img/stop.png" alt="play">
+            <span id="time">00:00</span>
+            <span id='duration'>/00:00</span>
+            <div class="process">
+                <span id="loaded"></span>
+                <span id="playing_time"></span>
+            </div>
+        </div>
+        <div class="audio_list">
+            <ul>
+                <li class="audio_item">audio1</li>
+                <li class="audio_item">audio2</li>
+                <li class="audio_item">audio3</li>
+                <li class="audio_item">audio4</li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/audio.js"></script>
+</body>
+</html>
